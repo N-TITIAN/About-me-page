@@ -132,7 +132,7 @@ color: var(--secondary-color);
 }
 .image img{
 
-      border-top-left-radius: 20rem; border-top-right-radius: 20rem;
+      /* border-top-left-radius: 20rem; border-top-right-radius: 20rem; */
 }
 .hng-track{
     position: absolute;
