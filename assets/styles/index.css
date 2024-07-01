@@ -65,7 +65,7 @@ nav h2 {
 }
 nav ul{
 list-style: none;
-font-size: 14px;
+
 display: flex;
 flex-direction: row;
 gap: 1rem;
@@ -81,8 +81,33 @@ color: var(--secondary-color);
     flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-
+  position: relative;
+}
+.hero-bg{
+    position: absolute;
+     background: linear-gradient(to right, var(--secondary-color) 0%, rgba(var(--secondary-color), 0.8) 70%, transparent 100%);
+  /* Shape with a diagonal wave at the bottom */
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  z-index: -1;
+}
+.head-background{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 95%;
+    top: 0;
+    left: 0;
+ z-index: 0;
+ border-radius: 0% 100% 21% 79% / 62% 0% 100% 38% ;
+}
+.head-background1{
+     position: absolute;
+   background: linear-gradient(to right, #FFAE00,#FF8A00);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+ z-index: -1;
 }
 .hero-description{
    display: flex;
@@ -224,7 +249,12 @@ header{
     gap:1rem;
 }
 
-
+.head-background{
+   display: none;
+}
+.head-background1{
+   display: none;
+}
 
 .welcome{
     padding: .4rem;
@@ -320,7 +350,12 @@ header{
     gap:1rem;
 }
 
-
+.head-background{
+   display: none;
+}
+.head-background1{
+   display: none;
+}
 
 .welcome{
     padding: .4rem;
