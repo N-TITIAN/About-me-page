@@ -141,7 +141,7 @@ color: var(--secondary-color);
     background-color: var(--primary-color);
     color: white;
     border-radius: 1rem;
-  
+   left: -2rem;
     overflow: visible;
 }
 .welcome{
@@ -349,7 +349,9 @@ header{
     flex-direction: column;
     gap:1rem;
 }
-
+.hng-track{
+    left: 0;
+}
 .head-background{
    display: none;
 }
